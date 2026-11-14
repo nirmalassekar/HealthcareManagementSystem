@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare Plus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>HealthCare Plus</h2>
+    
+<nav>
+    <a href="index.html">Home</a>
+    <a href="patient.html">Patients</a>
+    <a href="doctor.html">Doctors</a>
+    <a href="appointment.html">Appointments</a>
+    <a href="dashboard.html">Dashboard</a>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+    <h1>Your Health, Our Priority</h1>
+    <p>Quality healthcare made simple and accessible.</p>
+    <a href="#appointment" class="btn">Book Appointment</a>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+        <div class="card">Patient Registration</div>
+        <div class="card">Doctor Consultation</div>
+        <div class="card">Online Appointment</div>
+    </div>
+</section>
+
+<section id="doctors">
+    <h2>Our Doctors</h2>
+    <div class="cards">
+        <div class="card">Dr. Arun Kumar<br>Cardiologist</div>
+        <div class="card">Dr. Priya<br>Neurologist</div>
+        <div class="card">Dr. Ravi<br>General Physician</div>
+    </div>
+</section>
+
+<section id="appointment">
+    <h2>Book Your Appointment</h2>
+
+    <form id="appointmentForm">
+        <input type="text" id="name" placeholder="Patient Name" required>
+        <input type="number" id="age" placeholder="Age" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+
+        <select id="doctor" required>
+            <option value="">Select Doctor</option>
+            <option>Dr. Arun Kumar</option>
+            <option>Dr. Priya</option>
+            <option>Dr. Ravi</option>
+        </select>
+
+        <input type="date" id="date" required>
+        <button type="submit">Book Appointment</button>
+    </form>
+
+    <p id="message"></p>
+</section>
+
+<footer>
+    <p>© 2026 HealthCare Plus | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

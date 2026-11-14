@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>HealthCare Plus</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="patient.html">Patients</a>
+        <a href="doctor.html">Doctors</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Doctor Registration</h2>
+
+    <form id="doctorForm">
+        <input type="number" id="doctorId" placeholder="Doctor ID" min="1" required>
+        <input type="text" id="doctorName" placeholder="Doctor Name" required>
+        <input type="text" id="specialization" placeholder="Specialization" required>
+        <input type="number" id="experience" placeholder="Experience (Years)" min="0" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+
+        <button type="submit">Register Doctor</button>
+    </form>
+
+    <p id="doctorMessage" role="status"></p>
+
+    <div class="patient-list-section">
+        <hr>
+        <h2>Doctor List</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Specialization</th>
+                    <th>Experience</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody id="doctorTableBody"></tbody>
+        </table>
+    </div>
+</section>
+
+<script src="doctor.js"></script>
+</body>
+</html>

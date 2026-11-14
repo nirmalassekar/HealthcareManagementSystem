@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>HealthCare Plus</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="patient.html">Patients</a>
+        <a href="doctor.html">Doctors</a>
+        <a href="appointment.html">Appointments</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Admin Dashboard</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Patients</h3>
+            <h1 id="patientCount">0</h1>
+        </div>
+
+        <div class="card">
+            <h3>Doctors</h3>
+            <h1 id="doctorCount">0</h1>
+        </div>
+
+        <div class="card">
+            <h3>Appointments</h3>
+            <h1 id="appointmentCount">0</h1>
+        </div>
+    </div>
+</section>
+
+
+<h2>Patient Details</h2>
+<div id="patientTable"></div>
+
+<h2>Doctor Details</h2>
+<div id="doctorTable"></div>
+
+<h2>Appointment Details</h2>
+<div id="appointmentTable"></div>
+
+
+<script src="dashboard.js"></script>
+</body>
+</html>

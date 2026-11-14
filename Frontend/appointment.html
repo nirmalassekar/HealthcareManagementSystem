@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>HealthCare Plus</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="patient.html">Patients</a>
+        <a href="doctor.html">Doctors</a>
+        <a href="appointment.html">Appointment</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Book Your Appointment</h2>
+
+    <form id="bookingForm">
+        <input type="number" id="appointmentId"
+               placeholder="Appointment ID" min="1" required>
+
+        <input type="number" id="patientId"
+               placeholder="Patient ID" min="1" required>
+
+        <input type="number" id="doctorId"
+               placeholder="Doctor ID" min="1" required>
+
+        <input type="date" id="date" required>
+        <input type="time" id="time" required>
+
+        <input type="text" id="reason"
+               placeholder="Reason for Appointment" required>
+
+        <button type="submit" id="bookingButton">
+            Book Appointment
+        </button>
+
+        <button type="button" id="cancelEditButton"
+                style="display:none;">
+            Cancel Update
+        </button>
+    </form>
+
+    <p id="bookingMessage" role="status"></p>
+
+    <div class="patient-list-section">
+        <hr>
+        <h2>Appointment List</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Appointment ID</th>
+                    <th>Patient ID</th>
+                    <th>Doctor ID</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Reason</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="appointmentTableBody"></tbody>
+        </table>
+    </div>
+</section>
+
+<script src="appointment.js"></script>
+</body>
+</html>
